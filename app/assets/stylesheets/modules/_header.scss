@@ -1,12 +1,10 @@
 .globalnav {
-  background-color: #f2f4f8;
-  border-top: 1px solid #d7dbe2;
   display: block;
 }
 .globalnav__menu {
     clear: both;
     width: 100%;
-    background-color: #cf12c6;
+    background-color: $pink;
     text-align: center;
   }
 
@@ -31,7 +29,7 @@
 .globalnav__menu>ul>li>a {
   display: block;
   vertical-align: middle;
-  color: #f2f4f8;
+  color: $white;
 }
 
 .gmenu {
