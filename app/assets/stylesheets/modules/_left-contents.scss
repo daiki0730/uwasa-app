@@ -1,0 +1,113 @@
+#contents {
+  height: 670px;
+  padding: 1em 0;
+  display: block;
+  background-color: $white;
+  color: #3b3e45;
+}
+
+#ContentsBody {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.Container {
+  display: block;
+  width: 950px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+span.Guid {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+#Main {
+  width: 634px;
+  display: block;
+}
+
+.section {
+  position: relative;
+  padding: 20px;
+  background-color: $white;
+  box-shadow: rgba(0,0,0,0.2) 0px 0px 1px 1px;
+}
+
+.container {
+  display: block;
+}
+
+.header {
+  position: relative;
+  padding: 0 0.25em;
+}
+
+.header--section {
+  margin-bottom: 1em;
+  border-bottom: 3px solid #ad0a0a;
+}
+
+ h2.text-middle {
+  font-size: 16px;
+  margin: 0 0 0.5em 0;
+  font-weight: 600;
+  line-height: 1.2;
+  display: block;
+ }
+
+ .color-gray-light {
+  font-size: 20px;
+  color: #8b8e96;
+  line-height: 1;
+}
+
+i.far.fa-comment::before {
+  font-family: 'bambi';
+  content: "\f086";
+  font-weight: 400;
+}
+
+.thumbnails {
+  margin-top: 30px;
+  padding-left: 0;
+  list-style: none;
+}
+
+ul {
+  display: block
+}
+
+.col {
+  width: 139px;
+  margin-left: 0%;
+  margin-bottom: 2%;
+  clear: both;
+  display: inline-block;
+}
+
+img {
+  width: 139px;
+  height: 197px;
+}
+
+.thumbnail__figure {
+  padding-top: 141.4%;
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1) inset;
+}
+
+.thumbnail__caption {
+  padding: 0.5em 0 0;
+  display: block;
+  line-height: 1.3;
+  font-size: 12px;
+  text-align: center;
+}
