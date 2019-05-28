@@ -1,9 +1,16 @@
+#Sub {
+  float: right;
+  width: 300px;
+  display: inline-block;
+}
+
 #contents {
   height: 670px;
   padding: 1em 0;
   display: block;
-  background-color: $white;
   color: #3b3e45;
+  background-image: url('背景.jpg');
+  background-size: cover;
 }
 
 #ContentsBody {
@@ -32,7 +39,7 @@ span.Guid {
 
 #Main {
   width: 634px;
-  display: block;
+  display: inline-block;
 }
 
 .section {
@@ -53,7 +60,7 @@ span.Guid {
 
 .header--section {
   margin-bottom: 1em;
-  border-bottom: 3px solid #ad0a0a;
+  border-bottom: 3px solid rgb(251, 219, 92);
 }
 
  h2.text-middle {
@@ -110,4 +117,73 @@ img {
   line-height: 1.3;
   font-size: 12px;
   text-align: center;
+}
+
+.hr-bottom--thin {
+  border-bottom: 1px solid #d7dbe2;
+  padding-bottom: 0.5em;
+  font-size: 14px;
+}
+
+h4 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.listview--condensed>li {
+  border-radius: 0;
+  background: transparent;
+  padding: 0.5em;
+  margin: 0;
+  border-bottom: 1px solid #d7dbe2;
+}
+
+.box {
+  box-sizing: border-box;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  list-style: none;
+}
+
+.w40 {
+  width: 40px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.box__cell {
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.label {
+  min-width: 1em;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: .99;
+  padding: 0.4em 0.6em;
+  margin-right: 0.2em;
+  margin-bottom: 0.2em;
+  border-radius: 1000px;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+.bgcolor-gray-lighter {
+  background-color: #54fcca;
+  color: $white;
+}
+
+p.text-xsmall.no-space {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+p.label.bgcolor-gray-lighter.align-center {
+  margin: 10px 0;
 }

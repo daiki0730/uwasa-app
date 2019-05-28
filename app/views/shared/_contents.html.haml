@@ -8,8 +8,8 @@
           .container
             %header.header.header--section
               %h2.text-middle
-                %i.far.fa-comments.color-gray-light
-                New Spots
+                .color-gray-light
+                新規投稿
             %ul#list-module.thumbnails
               %li.col
                 = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
@@ -18,7 +18,7 @@
                   %h3.text-xsmall.text-overflow
                     %span>
                       %i.icon-rate-60.text-xxsmall.opacity-60{:title => ""}
-                    東京の都市伝説
+                    海の幽霊
               %li.col
                 = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
                   .thumbnail_figure
@@ -26,7 +26,7 @@
                   %h3.text-xsmall.text-overflow
                     %span>
                       %i.icon-rate-60.text-xxsmall.opacity-60{:title => ""}
-                    東京の都市伝説
+                    山の奥深くにある滝
               %li.col
                 = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
                   .thumbnail_figure
@@ -82,13 +82,47 @@
             %i.icon-crown.color-gray-light>
             人気カテゴリー
           %ul.listview.listview--condensed.text-small
-            %li{"data-gossip-id" => "346394"}
-              %a{:href => "/products/1"}
-                .box
-                  .box__cell.w40.align-center
-                    %p.label.bgcolor-gray-lighter.align-center
-                      1
-                  .box__cell.pl1em
-                    %p.text-xsmall.no-space
-                      オオカミ少女と黒王子
-                    %img{:alt => "", :src => ""}/
+            %li
+              .box
+                .box__cell.w40.align-center
+                  %p.label.bgcolor-gray-lighter.align-center
+                    1
+                .box__cell.pl1em
+                  %p.text-xsmall.no-space
+                    ホラー
+          %ul.listview.listview--condensed.text-small
+            %li
+              .box
+                .box__cell.w40.align-center
+                  %p.label.bgcolor-gray-lighter.align-center
+                    2
+                .box__cell.pl1em
+                  %p.text-xsmall.no-space
+                    ダイエット
+          %ul.listview.listview--condensed.text-small
+            %li
+              .box
+                .box__cell.w40.align-center
+                  %p.label.bgcolor-gray-lighter.align-center
+                    3
+                .box__cell.pl1em
+                  %p.text-xsmall.no-space
+                    トレンド
+          %ul.listview.listview--condensed.text-small
+            %li
+              .box
+                .box__cell.w40.align-center
+                  %p.label.bgcolor-gray-lighter.align-center
+                    4
+                .box__cell.pl1em
+                  %p.text-xsmall.no-space
+                    アニメ
+          %ul.listview.listview--condensed.text-small
+            %li
+              .box
+                .box__cell.w40.align-center
+                  %p.label.bgcolor-gray-lighter.align-center
+                    5
+                .box__cell.pl1em
+                  %p.text-xsmall.no-space
+                    フード
