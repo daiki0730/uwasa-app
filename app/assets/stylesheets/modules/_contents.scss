@@ -87,15 +87,16 @@ ul {
 
 .col {
   width: 139px;
-  margin-left: 0%;
   margin-bottom: 2%;
   clear: both;
   display: inline-block;
 }
 
 img {
-  width: 139px;
-  height: 197px;
+  padding-left:4px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
 }
 
 .thumbnail__figure {
