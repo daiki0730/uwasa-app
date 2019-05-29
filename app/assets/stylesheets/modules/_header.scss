@@ -1,0 +1,66 @@
+.globalnav {
+  display: block;
+}
+.globalnav__menu {
+    clear: both;
+    width: 100%;
+    background: rgba(27, 114, 245, 0.5);
+    text-align: center;
+  }
+
+.globalnav__menu ul{
+  box-sizing: border-box;
+  position: relative;
+  width: 950px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: table;
+  white-space: nowrap;
+}
+
+.globalnav__menu>ul>li {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+}
+
+.globalnav__menu>ul>li>a {
+  display: block;
+  vertical-align: middle;
+  color: $white;
+}
+
+.gmenu {
+  text-align: center;
+}
+
+li.logo {
+  float: left;
+  width: 100px;
+  height: 51px;
+  font-size: 30px;
+}
+
+.logo>a {
+  padding: 8px;
+}
+
+li.entry_button {
+  float: right;
+  width: 100px;
+  height: 41px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  background: transparent;
+  padding: 13px 10px;
+}
+
+
+
+
+
