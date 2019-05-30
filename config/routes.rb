@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'gossips#index'
+  root 'tweets#index'
 end
