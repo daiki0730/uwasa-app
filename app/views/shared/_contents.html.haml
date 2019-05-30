@@ -11,104 +11,14 @@
                 .color-gray-light
                 新規投稿
             %ul#list-module.thumbnails
-              %li.col
-                = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
-                  .thumbnail_figure
-                .thumbnail__caption
-                  %h3.text-xsmall.text-overflow
-                    %span>
-                      %i.icon-rate-60.text-xxsmall.opacity-60{:title => ""}
-                    海の幽霊
-              %li.col
-                = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
-                  .thumbnail_figure
-                .thumbnail__caption
-                  %h3.text-xsmall.text-overflow
-                    %span>
-                      %i.icon-rate-60.text-xxsmall.opacity-60{:title => ""}
-                    山の奥深くにある滝
-              %li.col
-                = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
-                  .thumbnail_figure
-                .thumbnail__caption
-                  %h3.text-xsmall.text-overflow
-                    %span>
-                      %i.icon-rate-60.text-xxsmall.opacity-60{:title => ""}
-                    東京の都市伝説
-              %li.col
-                = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
-                  .thumbnail_figure
-                .thumbnail__caption
-                  %h3.text-xsmall.text-overflow
-                    %span>
-                      %i.icon-rate-60.text-xxsmall.opacity-60{:title => ""}
-                    東京の都市伝説
-            %ul#list-module.thumbnails
-              %li.col
-                = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
-                  .thumbnail_figure
-                .thumbnail__caption
-                  %h3.text-xsmall.text-overflow
-                    %span>
-                      %i.icon-rate-60.text-xxsmall.opacity-60{:title => ""}
-                    東京の都市伝説
-              %li.col
-                = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
-                  .thumbnail_figure
-                .thumbnail__caption
-                  %h3.text-xsmall.text-overflow
-                    %span>
-                      %i.icon-rate-60.text-xxsmall.opacity-60{:title => ""}
-                    東京の都市伝説
-              %li.col
-                = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
-                  .thumbnail_figure
-                .thumbnail__caption
-                  %h3.text-xsmall.text-overflow
-                    %span>
-                      %i.icon-rate-60.text-xxsmall.opacity-60{:title => ""}
-                    東京の都市伝説
-              %li.col
-                = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
-                  .thumbnail_figure
-                .thumbnail__caption
-                  %h3.text-xsmall.text-overflow
-                    %span>
-                      %i.icon-rate-60.text-xxsmall.opacity-60{:title => ""}
-                    東京の都市伝説
-            %ul#list-module.thumbnails
-              %li.col
-                = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
-                  .thumbnail_figure
-                .thumbnail__caption
-                  %h3.text-xsmall.text-overflow
-                    %span>
-                      %i.icon-rate-60.text-xxsmall.opacity-60{:title => ""}
-                    東京の都市伝説
-              %li.col
-                = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
-                  .thumbnail_figure
-                .thumbnail__caption
-                  %h3.text-xsmall.text-overflow
-                    %span>
-                      %i.icon-rate-60.text-xxsmall.opacity-60{:title => ""}
-                    東京の都市伝説
-              %li.col
-                = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
-                  .thumbnail_figure
-                .thumbnail__caption
-                  %h3.text-xsmall.text-overflow
-                    %span>
-                      %i.icon-rate-60.text-xxsmall.opacity-60{:title => ""}
-                    東京の都市伝説
-              %li.col
-                = image_tag "https://cdn.zekkei-japan.jp/images/areas/40f21b30b17c649b5263113065a9e1a7.jpg" do
-                  .thumbnail_figure
-                .thumbnail__caption
-                  %h3.text-xsmall.text-overflow
-                    %span>
-                      %i.icon-rate-60.text-xxsmall.opacity-60{:title => ""}
-                    東京の都市伝説
+              - @tweets.each do |tweet|
+                %li.col
+                  = image_tag tweet.image_url do
+                    .thumbnail_figure
+                  .thumbnail__caption
+                    %h3.text-xsmall.text-overflow
+                      %span>
+                        = tweet.title
       #Sub
         %aside.section
           %h4.text-small.hr-bottom--thin.no-space-bottom
