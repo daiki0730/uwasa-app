@@ -54,13 +54,18 @@ li.entry_button {
   font-size: 20px;
 }
 
-a {
+.logo > a,.entry_button > a{
   text-decoration: none;
   background: transparent;
-  padding: 13px 10px;
+}
+
+.logo > a {
+  padding: 8px 10px;
 }
 
 
-
+.entry_button > a {
+  padding: 13px 10px;
+}
 
 

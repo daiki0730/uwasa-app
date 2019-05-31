@@ -9,21 +9,24 @@
             %header.header.header--section
               %h2.text-middle
                 .color-gray-light
-                新規投稿
+                NEW TOPICS
             %ul#list-module.thumbnails
               - @tweets.each do |tweet|
                 %li.col
-                  = image_tag tweet.image_url do
-                    .thumbnail_figure
-                  .thumbnail__caption
-                    %h3.text-xsmall.text-overflow
-                      %span>
-                        = tweet.title
+                  = link_to "", class: "col_contents" do
+                    = image_tag tweet.image_url do
+                      .thumbnail_figure
+                    .thumbnail__caption
+                      %h3.text-xsmall.text-overflow
+                        %span>
+                          = tweet.country
+                          ／
+                          = tweet.title
       #Sub
         %aside.section
           %h4.text-small.hr-bottom--thin.no-space-bottom
             %i.icon-crown.color-gray-light>
-            人気記事
+            RANKING
           %ul.listview.listview--condensed.text-small
             %li
               .box
@@ -32,7 +35,7 @@
                     1
                 .box__cell.pl1em
                   %p.text-xsmall.no-space
-                    アメリカ
+                    U.S.A.
           %ul.listview.listview--condensed.text-small
             %li
               .box
@@ -41,7 +44,7 @@
                     2
                 .box__cell.pl1em
                   %p.text-xsmall.no-space
-                    タイ
+                    Thai
           %ul.listview.listview--condensed.text-small
             %li
               .box
@@ -50,7 +53,7 @@
                     3
                 .box__cell.pl1em
                   %p.text-xsmall.no-space
-                    イタリア
+                    Italia
           %ul.listview.listview--condensed.text-small
             %li
               .box
@@ -59,7 +62,7 @@
                     4
                 .box__cell.pl1em
                   %p.text-xsmall.no-space
-                    オーストラリア
+                    Canada
           %ul.listview.listview--condensed.text-small
             %li
               .box
@@ -68,4 +71,4 @@
                     5
                 .box__cell.pl1em
                   %p.text-xsmall.no-space
-                    シンガポール
+                    Japan
