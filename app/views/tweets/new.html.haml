@@ -1,15 +1,15 @@
 = render 'shared/header'
 .contents.row
   .container
-    %form{"accept-charset" => "UTF-8", :action => "/tweets", :method => "post"}
+    = form_tag('/tweets', method: :post) do
       %input{:name => "utf8", :type => "hidden", :value => "✓"}/
       %input{:name => "authenticity_token", :type => "hidden", :value => "K8+nMBBnyWfBfjeJu+qZLwLTkiV82Gs8XHMsFGqEoUiFsUrF5VuSV7yfBgD6N2ywZWO1Pal56EBGJmT4/fXe/Q=="}/
       %h3
         New Topic
       %input{:name => "title", :placeholder => "Title", :type => "text"}/
       %input{:name => "country", :placeholder => "Country", :type => "text"}/
-      %input{:name => "image", :placeholder => "Image Url", :type => "text"}/
-      %textarea{:cols => "30", :name => "text", :placeholder => "text", :rows => "10"}
+      %input{:name => "image_url", :placeholder => "Image Url", :type => "text"}/
+      %textarea{:cols => "30", :name => "detail", :placeholder => "text", :rows => "10"}
       %input{:type => "submit", :value => "SENT"}/
 
 
