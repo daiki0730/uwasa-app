@@ -9,11 +9,8 @@ class TweetsController < ApplicationController
 
   def create
     Tweet.create(tweet_params)
+    @tweets = Tweet.all
   end
 
   private
-
-  def tweet_params
-    params.require(:tweet).permit(:title, :country, :image_url, :detail)
-  end
 end
