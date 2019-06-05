@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  root 'gossips#index'
+  root 'tweets#index'
+
+  get  'tweets/new', to: 'tweets#new'
+  post 'tweets', to: 'tweets#create'
 end
