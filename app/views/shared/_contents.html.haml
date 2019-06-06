@@ -14,7 +14,7 @@
               - @tweets.each do |tweet|
                 %li.col
                   = link_to "", class: "col_contents" do
-                    = image_tag tweet.image do
+                    = image_tag tweet.image.url do
                       .thumbnail_figure
                     .thumbnail__caption
                       %h3.text-xsmall.text-overflow

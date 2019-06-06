@@ -1,3 +1,4 @@
 class Tweet < ApplicationRecord
-  mount_uploader :image_url, ImageUploader
+  validates :country, presence: true
+  mount_uploader :image, ImageUploader
 end

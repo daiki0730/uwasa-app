@@ -1,16 +1,34 @@
 = render 'shared/header'
 .contents.row
   .container-new
-    = form_tag('/tweets', method: :post) do
-      %input{:name => "utf8", :type => "hidden", :value => "✓"}/
-      %input{:name => "authenticity_token", :type => "hidden", :value => "K8+nMBBnyWfBfjeJu+qZLwLTkiV82Gs8XHMsFGqEoUiFsUrF5VuSV7yfBgD6N2ywZWO1Pal56EBGJmT4/fXe/Q=="}/
-      %h3
-        New Topic
-      %input{:name => "title", :placeholder => "Title", :type => "text"}/
-      %input{:name => "country", :placeholder => "Country", :type => "text"}/
-      %input{:name => "image_url", :placeholder => "Image Url", :type => "text"}/
-      %textarea{:cols => "30", :name => "detail", :placeholder => "text", :rows => "10"}
-      %input{:type => "submit", :value => "SENT"}/
+    %h3
+      New Topic
+    = form_for @tweet do |f|
+      .item__content
+        .form__group
+          = f.label :Title, class: "form-label"
+          %span.form-require *Mandatory field
+          = f.text_field :title, class: "input__default"
+      .item__content
+        .form__group
+          = f.label :Country, class: "form-label"
+          %span.form-require *Mandatory field
+          = f.text_field :country, class: "input__default"
+      .item__content
+        = f.fields_for :image, Tweet.new do |image|
+          .form__mask
+            = f.label :image, class: 'form__mask__image' do
+              =f.label :image, class: "form-label"
+              %span.form-require *Mandatory field
+              = f.file_field :image, class: "hidden"
+              .form__mask__box
+      .item__content
+        .form__group
+          =f.label :Review, class: "form-label"
+          %span.form-require *Mandatory field
+          =f.text_area :detail, class: "textarea__default", rows: "7"
+        = f.submit 'Send', class: 'form__submit'
 
 
 = render 'shared/footer'
+
