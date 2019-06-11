@@ -5,7 +5,12 @@
         %li.logo
           = link_to root_path, class: "logo-header" do
             AfterHours
-        %li.entry_button
-          = link_to tweets_new_path,class: "login-header" do
-            NewTopic
-
+        - if user_signed_in?
+          %li.entry_button
+            = link_to tweets_new_path,class: "newtopic-header" do
+              NewTopic
+        - else
+          %li.entry_button
+            = link_to 'Login',root_path
+          %li.entry_button
+            = link_to 'Sign up' ,root_path
